@@ -1,0 +1,164 @@
+<!-- OWN CODE STARTS HERE-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding for the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Ensure the webpage is responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>JUICIZ - Menu</title>
+
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css"> <!-- Common styles -->
+
+
+    <!-- Include Bootstrap CSS for layout and styling  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="image.png" type="image/png">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="index.html">JUICIZ</a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                
+                <!-- Sign In Button -->
+                <a href="signin.html" class="sign-in-btn">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section: Welcome message with a title and description -->
+    <div class="hero">
+        <h1>Our Fresh Juices</h1>
+        <p>Select your favorite juice and add it to your cart!</p>
+    </div>
+
+    <!-- Main menu section to display juice options -->
+    <div class="menu-container">
+        <!-- Row for the first three juices -->
+        <div class="juice-row">
+            <!-- Each juice is displayed in a card format -->
+            <div class="juice-card">
+                <!-- Image of the juice -->
+                <img src="green.png" alt="Green Energy" class="juice-thumbnail">
+                <!-- Juice name -->
+                <h3>Green Energy</h3>
+                <!-- Juice ingredients -->
+                <p>Kale, Spinach, Apple</p>
+                <!-- Add-to-cart button with price -->
+                <button class="add-to-cart" data-name="Green Energy" data-price="5.99">Add to Cart - £5.99</button>
+            </div>
+
+            <!-- Another juice card -->
+            <div class="juice-card">
+                <img src="pink.png" alt="Berry Blast" class="juice-thumbnail">
+                <h3>Berry Blast</h3>
+                <p>Mixed Berries, Pomegranate</p>
+                <button class="add-to-cart" data-name="Berry Blast" data-price="4.99">Add to Cart - £4.99</button>
+            </div>
+
+            <!-- Third juice in the first row -->
+            <div class="juice-card">
+                <img src="orange.png" alt="Citrus Sunrise" class="juice-thumbnail">
+                <h3>Citrus Sunrise</h3>
+                <p>Orange, Lemon, Grapefruit</p>
+                <button class="add-to-cart" data-name="Citrus Sunrise" data-price="6.49">Add to Cart - £6.49</button>
+            </div>
+        </div>
+
+        <!-- Row for the next three juices -->
+        <div class="juice-row">
+            <div class="juice-card">
+                <img src="mango.png" alt="Tropical Mango" class="juice-thumbnail">
+                <h3>Tropical Mango</h3>
+                <p>Mango, Pineapple</p>
+                <button class="add-to-cart" data-name="Tropical Mango" data-price="5.49">Add to Cart - £5.49</button>
+            </div>
+
+            <div class="juice-card">
+                <img src="watermelon.png" alt="Watermelon Splash" class="juice-thumbnail">
+                <h3>Watermelon Splash</h3>
+                <p>Watermelon, Mint</p>
+                <button class="add-to-cart" data-name="Watermelon Splash" data-price="4.49">Add to Cart - £4.49</button>
+            </div>
+
+            <div class="juice-card">
+                <img src="lemonade.png" alt="Lemonade Burst" class="juice-thumbnail">
+                <h3>Lemonade Burst</h3>
+                <p>Lemon, Lime</p>
+                <button class="add-to-cart" data-name="Lemonade Burst" data-price="3.99">Add to Cart - £3.99</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart section to display selected items -->
+    <div class="cart-container">
+        <!-- Heading for the cart -->
+        <h3>Your Cart</h3>
+        <!-- List of items added to the cart -->
+        <ul id="cart-items"></ul>
+        <!-- Display the total price dynamically -->
+        <p>Total: £<span id="total-price">0.00</span></p>
+        <!-- Buttons for checkout and clearing the cart -->
+        <button class="checkout-btn">Checkout</button>
+        <button class="clear-cart-btn">Clear Cart</button>
+    </div>
+
+    <!-- Footer at the bottom of the page -->
+    <footer class="text-center pb-4">
+        <div class="social-icons mb-3">
+            <a href="https://www.instagram.com" class="social-icon" target="_blank" aria-label="Visit our Instagram page">
+                <i class="fab fa-instagram fa-sm"></i>
+            </a>
+            <a href="https://www.facebook.com" class="social-icon" target="_blank" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook-f fa-sm"></i>
+            </a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank" aria-label="Visit our Twitter page">
+                <i class="fab fa-twitter fa-sm"></i>
+            </a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank" aria-label="Visit our LinkedIn page">
+                <i class="fab fa-linkedin-in fa-sm"></i>
+            </a>
+        </div>
+        <p class="mt-4">&copy; JUICIZ. All rights reserved 2025.</p>
+    </footer>
+    
+
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="menu.js"></script>
+    <!-- Bootstrap JS (Required for dropdowns and other interactive features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- OWN CODE ENDS HERE-->

@@ -1,0 +1,163 @@
+/* OWN CODE STARTS HERE*/
+
+body {
+    background-color: #f9f1e7 !important; /* Set a light background color for the page */
+    height: 100vh; /* Ensure full height coverage of the body */
+    margin: 0; /* Remove any default margin applied by the browser */
+}
+
+
+/* Top Right Sign-In Button */
+.sign-in-btn {
+    display: inline-block;
+    padding: 10px 20px; /* Add padding around the text */
+    background-color: #ff6b6b; /* Set background color for the button */
+    color: white; /* Set text color to white */
+    font-weight: 600; /* Make the button text bold */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Make the button rounded */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+    margin-left: 1rem; /* Add space between the sign-in button and the navbar links */
+}
+
+.sign-in-btn:hover {
+    background-color: #ff4a4a; /* Change background color when hovered */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 100px; /* Adds space between the navbar and hero section */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 50px; /* Adds space below the hero section */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Set the font size for the main heading */
+    color: #333; /* Set heading color */
+    margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+.hero p {
+    font-size: 1.1rem; /* Set the font size for the paragraph */
+    color: #666; /* Set color for the paragraph text */
+}
+
+/* Sign-In Form */
+.sign-in-container {
+    max-width: 400px; /* Set max width for the form container */
+    margin: 0 auto; /* Center the form container */
+    padding: 2rem; /* Add padding inside the form container */
+    background-color: #fff; /* Set background color of the form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to the form */
+    border-radius: 10px; /* Round the corners of the form */
+}
+
+/* Form section */
+.sign-in-form label {
+    display: block; /* Display the label as block-level */
+    margin-bottom: 0.5rem; /* Space between the label and the input */
+    font-weight: 500; /* Set label text as bold */
+    color: #333; /* Set color of the label text */
+}
+
+.sign-in-form input {
+    width: 100%; /* Make the input fields full width */
+    padding: 10px; /* Add padding inside the input */
+    margin-bottom: 1rem; /* Add space below each input field */
+    border: 1px solid #ddd; /* Add a light border around the input */
+    border-radius: 5px; /* Round the corners of the input */
+    font-size: 1rem; /* Set font size inside the input */
+}
+
+/* Links Section */
+.links {
+    display: flex; /* Display links in a row */
+    justify-content: space-between; /* Space out the links */
+    align-items: center; /* Center the links vertically */
+    margin-bottom: 1.5rem; /* Add space below the links section */
+    font-size: 0.9rem; /* Set font size for the links */
+}
+
+.links a {
+    color: #007bff; /* Set color for the links */
+    text-decoration: none; /* Remove underline from the links */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.links span {
+    color: #333; /* Set color for the separator */
+}
+
+/* Google Button */
+.google-btn {
+    display: flex; /* Use flexbox to align the image and text */
+    align-items: center; /* Vertically align the image and text */
+    justify-content: center; /* Horizontally center the button content */
+    width: 100%; /* Make the button full width */
+    padding: 12px 0; /* Increase padding for a longer button */
+    background-color: #fff; /* Set background color */
+    border: 1px solid #ddd; /* Add light border around the button */
+    border-radius: 5px; /* Round the corners of the button */
+    margin-bottom: 1rem; /* Add space below the button */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth hover transition */
+}
+
+.google-btn img {
+    width: 80px; /* Set width of the Google logo */
+    height: 30px; /* Set height of the Google logo */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+.google-btn span {
+    color: #333; /* Set color for the button text */
+    font-weight: 500; /* Make the text bold */
+}
+
+.google-btn:hover {
+    background-color: #f9f9f9; /* Change background color on hover */
+    transform: scale(1.02); /* Slightly enlarge the button */
+}
+
+/* Sign In Button (under email and password fields) */
+.sign-in-btn-bottom {
+    width: 100%; /* Full width for the button */
+    padding: 15px 0; /* Increased padding for a longer button */
+    background-color: #ff6b6b; /* Set background color */
+    color: white; /* Set text color */
+    font-weight: 600; /* Make the text bold */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round the corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition on hover */
+    margin-bottom: 1rem; /* Add space between buttons */
+}
+
+.sign-in-btn-bottom:hover {
+    background-color: #ff4a4a; /* Change background color on hover */
+    transform: scale(1.02); /* Slightly enlarge the button */
+}
+
+/* Other Platform Button */
+.other-btn {
+    width: 100%; /* Full width for the button */
+    padding: 12px 0; /* Increased padding for a longer button */
+    background-color: #ff6b6b; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round the corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition on hover */
+    margin-bottom: 1rem; /* Add space between buttons */
+}
+
+.other-btn:hover {
+    background-color: #ff4a4a; /* Change background color on hover */
+    transform: scale(1.02); /* Slightly enlarge the button */
+}
+/* OWN CODE ENDS HERE*/

@@ -1,0 +1,59 @@
+/*OWN CODE STARTS HERE*/
+.about-section {
+    max-width: 1200px; /* Ensures content doesn't stretch too wide on large screens */
+    margin: 0 auto; /* Centers the section horizontally */
+    padding: 2rem; /* Adds spacing inside the section for better readability */
+    text-align: center; /* Aligns all text to the center */
+}
+
+.about-section h2 {
+    font-size: 2.5rem; /* Makes the heading large and prominent */
+    color: #333; /* Sets a dark gray color for better readability */
+    margin-bottom: 1rem; /* Adds spacing below the heading */
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Makes the paragraph text easy to read */
+    color: #555; /* Slightly lighter gray than the heading for contrast */
+    line-height: 1.6; /* Increases spacing between lines for better readability */
+    margin-bottom: 1.5rem; /* Adds space between paragraphs */
+}
+
+.hero {
+    padding-top: 100px; /* Pushes the hero section down to prevent overlap with the navbar */
+    text-align: center; /* Ensures text is centered for a clean layout */
+    margin-bottom: 50px; /* Adds space below the hero section */
+}
+
+.hero h1 {
+    font-size: 3.5rem; /* Makes the main heading very large to grab attention */
+    color: #333; /* Dark gray for high contrast and readability */
+    margin-bottom: 1rem; /* Adds spacing below the heading */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Makes the text easy to read */
+    color: #666; /* Medium gray for a softer look than the heading */
+}
+/* Style for the unordered list */
+.about-text ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+/* Style for list items to display them in a column */
+.about-text li {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically in the center */
+    margin-bottom: 5px; /* Adds space between list items */
+}
+
+/* Style for bullet points */
+.about-text li::before {
+    content: "•"; /* Adds a custom bullet */
+    color: #ff6b6b; /* color to match your theme */
+    font-size: 1.5rem; /* Adjust bullet size */
+    margin-right: 10px; /* Space between bullet and text */
+}
+/*OWN CODE ENDS HERE*/

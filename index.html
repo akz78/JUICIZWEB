@@ -1,0 +1,147 @@
+<!-- OWN CODE STARTS HERE -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Metadata for SEO and page information -->
+    <meta name="description" content="Discover a variety of fresh and delicious juice options at our juiciz shop. From tasty blends to refreshing classics, we have something for everyone. Visit us today!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUICIZ - Fresh & Natural</title>
+    
+    <!-- Linking Bootstrap for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Website Favicon -->
+    <link rel="icon" href="image.png" type="image/png">
+</head>
+<body>
+    <!-- Logo Image -->
+    <img src="image.png" alt="JUICIZ - Fresh & Natural" style="max-width: 200px; height: auto;">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <!-- Brand Name (Logo) -->
+            <a class="navbar-brand" href="index.html">JUICIZ</a>
+            
+            <!-- Button for mobile navigation menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Sign In Button -->
+                <a href="signin.html" class="sign-in-btn">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Introductory Banner) -->
+    <div class="hero" style="margin-top: 60px;">
+        <h1>THE ULTIMATE <span class="highlight">Juice Experience</span></h1>
+        <p>Hover over our most popular juices to explore them! To see more, check out our menu.</p>
+    </div>
+
+    <!-- Juice Cards Section -->
+    <div class="juice-container">
+        <!-- Green Energy Juice Card -->
+        <div class="juice-wrapper">
+            <div class="juice-card" id="greenEnergy">
+                <img src="green.png" alt="Green Energy juice with Kale, Spinach, and Apple" class="juice-thumbnail">
+                <div class="juice-info">
+                    <h2>Green Energy</h2>
+                    <p>Kale, Spinach, Apple</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Berry Blast Juice Card -->
+        <div class="juice-wrapper">
+            <div class="juice-card" id="berryBlast">
+                <img src="pink.png" alt="Berry Blast juice with Mixed Berries and Pomegranate" class="juice-thumbnail">
+                <div class="juice-info">
+                    <h2>Berry Blast</h2>
+                    <p>Mixed Berries, Pomegranate</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Citrus Sunrise Juice Card -->
+        <div class="juice-wrapper">
+            <div class="juice-card" id="citrusSunrise">
+                <img src="orange.png" alt="Citrus Sunrise juice with Orange, Lemon, and Grapefruit" class="juice-thumbnail">
+                <div class="juice-info">
+                    <h2>Citrus Sunrise</h2>
+                    <p>Orange, Lemon, Grapefruit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Enlarged Juice Info -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-image">
+                <img src="" id="modal-img" alt="">
+            </div>
+            <div class="modal-description">
+                <h3 id="modal-title">Best Seller</h3>
+                <p id="modal-text">This is the best-selling drink. It uses oranges from Italy and has been a favorite for years!</p>
+            </div>
+            <!-- Close Button for Modal -->
+            <button class="btn-close" aria-label="Close" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="text-center pb-4">
+        <!-- Social Media Icons -->
+        <div class="social-icons mb-3">
+            <a href="https://www.instagram.com" class="social-icon" target="_blank" aria-label="Visit our Instagram page">
+                <i class="fab fa-instagram fa-sm"></i>
+            </a>
+            <a href="https://www.facebook.com" class="social-icon" target="_blank" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook-f fa-sm"></i>
+            </a>
+            <a href="https://www.twitter.com" class="social-icon" target="_blank" aria-label="Visit our Twitter page">
+                <i class="fab fa-twitter fa-sm"></i>
+            </a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank" aria-label="Visit our LinkedIn page">
+                <i class="fab fa-linkedin-in fa-sm"></i>
+            </a>
+        </div>
+        <!-- Copyright Text -->
+        <p class="mt-4">&copy; JUICIZ. All rights reserved 2025.</p>
+    </footer>
+    
+</body>
+</html>
+        <!-- OWN CODE ENDS HERE -->
+

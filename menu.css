@@ -1,0 +1,111 @@
+/* OWN CODE STARTS HERE*/
+html, body {
+    height: 100%; /* Make sure the body takes up the full height */
+    background-color: #f9f1e7 !important; /* Set background color to light beige */
+    color: #333; /* Set text color to dark gray */
+}
+/* Hero Section */
+.hero {
+    padding-top: 120px; /* Add top padding to make room for navbar */
+    text-align: center; /* Center the text */
+    margin-bottom: 50px; /* Add bottom margin */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Larger font size for heading */
+    color: #333; /* Dark gray text */
+    margin-bottom: 1rem; /* Add space below heading */
+}
+
+.hero p {
+    font-size: 1.1rem; /* Slightly larger font for paragraph */
+    color: #666; /* Lighter gray text for description */
+}
+
+/* Menu Section */
+.menu-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Space between items */
+    margin-top: 80px; /* Add top margin to separate from previous section */
+}
+
+.juice-row {
+    display: flex; /* Use flexbox for juice items */
+    justify-content: center; /* Center items */
+    gap: 2rem; /* Space between items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    margin-top: 20px; /* Add space above the row */
+}
+
+.juice-card {
+    background-color: #fff; /* White background for card */
+    padding: 20px; /* Add padding inside card */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    width: 250px; /* Set fixed width */
+    text-align: center; /* Center text inside the card */
+    margin: 10px; /* Add margin around each card */
+}
+
+.juice-thumbnail {
+    width: 100%; /* Make the image take full width of the card */
+    border-radius: 10px; /* Round the corners of the image */
+}
+
+.add-to-cart {
+    background-color: #ff6b6b; /* Set background to red */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Slightly round the corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.add-to-cart:hover {
+    background-color: #ff4a4a; /* Darken color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.cart-container {
+    position: fixed; /* Fix cart container to the right */
+    right: 20px; /* Position from the right edge */
+    top: 100px; /* Position from the top */
+    background-color: #fff; /* White background */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Round corners */
+    width: 250px; /* Fixed width */
+}
+
+.cart-container h3 {
+    font-size: 1.5rem; /* Larger font size for section heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.cart-container ul {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding */
+}
+
+.cart-container li {
+    font-size: 1rem; /* Set font size for list items */
+    margin-bottom: 10px; /* Space below each item */
+}
+
+.checkout-btn, .clear-cart-btn {
+    background-color: #ff6b6b; /* Red background for buttons */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Round corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Make buttons stretch full width */
+    margin-top: 10px; /* Space between buttons */
+}
+
+.checkout-btn:hover, .clear-cart-btn:hover {
+    background-color: #ff4a4a; /* Darken background on hover */
+}
+/* OWN CODE ENDS HERE*/

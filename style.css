@@ -1,0 +1,384 @@
+/* OWN CODE STARTS HERE*/
+
+* {
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Makes sure width and height include padding and border */
+    font-family: Arial, sans-serif; /* Sets a standard font across all elements */
+}
+
+/* 
+   Body Styling: This sets the page background, text direction, and alignment.
+   `direction: ltr;` ensures the text reads from left to right unless changed.
+   `text-align: left;` keeps content aligned to the left by default.
+*/
+body {
+    background-color: #f9f1e7; /* Applies a light background color */
+    direction: ltr; /* Ensures default text direction is left to right */
+    text-align: left; /* Aligns text to the left unless overridden */
+}
+
+/* 
+   RTL (Right-to-Left) Support: This makes the website adjust when Arabic/Hebrew
+   or other RTL languages are used. The `[dir="rtl"]` attribute ensures text aligns properly.
+*/
+[dir="rtl"] body {
+    direction: rtl; /* Changes text direction for right-to-left languages */
+    text-align: right; /* Aligns text to the right in RTL mode */
+}
+
+/* 
+   Navbar Styling: `.navbar-nav` controls the layout of the navigation menu.
+   It is aligned to the left in LTR mode and right in RTL mode.
+*/
+.navbar-nav {
+    text-align: left; /* Ensures navigation links align to the left */
+}
+
+/* 
+   Adjust Navbar for RTL: This overrides the default behavior and moves 
+   the navbar to the right when the page is in RTL mode.
+*/
+[dir="rtl"] .navbar-nav {
+    text-align: right; /* Aligns navbar items to the right in RTL mode */
+}
+
+/* 
+   Navbar Brand (Logo) Styling: This makes the logo change color when hovered. 
+   The `!important` ensures it overrides any other color settings.
+*/
+.navbar-brand:hover {
+    color: #ff6b6b !important; /* Changes the logo color when hovered */
+}
+
+/* 
+   Navbar Links: Defines text color, weight, and a smooth transition when hovering.
+   The `transition` ensures the color change is gradual rather than instant.
+*/
+.navbar-nav .nav-link {
+    color: #000 !important; /* Sets text color to black for contrast */
+    font-weight: 500; /* Increases font thickness slightly for readability */
+    transition: color 0.3s ease-in-out; /* Smooth transition effect for hover */
+}
+
+/* 
+   Navbar Hover Effect: When a link is hovered, its color changes.
+   The `!important` ensures the new color takes precedence.
+*/
+.navbar-nav .nav-link:hover {
+    color: #ff6b6b !important; /* Changes text color when hovered */
+}
+
+/* 
+   Sign-in Button: Creates a visually appealing, clickable button with 
+   a red background, rounded corners, and smooth hover effects.
+*/
+.sign-in-btn {
+    display: inline-block; /* Ensures the button behaves like an inline element */
+    padding: 10px 20px; /* Adds spacing inside the button for better appearance */
+    background-color: #e05252; /* Sets a red background color */
+    color: white; /* Makes the text white for contrast */
+    font-weight: 600; /* Makes the text slightly bold */
+    border: none; /* Removes default button border */
+    border-radius: 50px; /* Rounds the button edges */
+    text-align: center; /* Centers text inside the button */
+    text-decoration: none; /* Removes underline from text */
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background and size transition */
+}
+
+/* 
+   Button Hover Effect: When hovered, the button changes color and scales up slightly.
+   The `transform: scale(1.05)` enlarges the button by 5% on hover.
+*/
+.sign-in-btn:hover {
+    background-color: #b84343; /* Darkens the button when hovered */
+    transform: scale(1.05); /* Increases button size slightly when hovered */
+}
+
+/* 
+   Hero Section: This section is usually the main headline area.
+   It has top padding, centered text, and a bottom margin for spacing.
+*/
+.hero {
+    margin-top: 80px; /* Pushes the hero section down */
+    padding-top: 100px; /* Adds extra space at the top */
+    text-align: center; /* Centers text horizontally */
+    margin-bottom: 50px; /* Adds spacing below */
+}
+
+/* 
+   Hero Heading (H1): This controls the size and color of the main heading.
+   The margin-bottom creates spacing between the heading and other elements.
+*/
+.hero h1 {
+    font-size: 3.5rem; /* Sets a large font size */
+    color: #333; /* Dark grey color for contrast */
+    margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+/* 
+   Highlighted Text: This makes certain words stand out by applying a red color 
+   and italic style. Useful for emphasizing keywords.
+*/
+.hero .highlight {
+    color: #d64b4b; /* Highlights text in a soft red color */
+    font-style: italic; /* Makes the text italic */
+}
+
+/* 
+   Responsive Hero Heading: When the screen width is below 768px, 
+   the heading size decreases to improve readability on smaller devices.
+*/
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Reduces font size for mobile screens */
+    }
+}
+
+/* 
+   Juice Section: A container for multiple juice product cards.
+   `flex-wrap: wrap;` ensures that cards move to the next line if needed.
+*/
+.juice-container {
+    max-width: 1200px; /* Prevents the container from becoming too wide */
+    margin: 0 auto; /* Centers the container */
+    padding: 2rem; /* Adds space inside the container */
+    display: flex; /* Uses flexbox to arrange items */
+    justify-content: space-around; /* Distributes items evenly */
+    flex-wrap: wrap; /* Allows items to wrap onto new rows if needed */
+    gap: 2rem; /* Adds spacing between items */
+}
+
+/* 
+   Juice Card: A clickable item that enlarges slightly when hovered.
+   `transition: transform 0.3s ease;` ensures smooth scaling.
+*/
+.juice-card {
+    width: 250px; /* Sets a fixed width */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+    text-align: center; /* Centers text inside */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* 
+   Juice Card Hover Effect: When hovered, the card scales up slightly.
+   This creates a subtle animation effect to attract attention.
+*/
+.juice-card:hover {
+    transform: scale(1.05); /* Enlarges card slightly */
+}
+
+/* 
+   Juice Image: Ensures all images fit nicely inside their containers 
+   while maintaining aspect ratio and rounded corners.
+*/
+.juice-thumbnail {
+    width: 100%; /* Makes the image fill its container */
+    height: 250px; /* Sets a consistent height for all images */
+    border-radius: 15px; /* Rounds the edges of the image */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill space */
+}
+
+/* 
+   Juice Card Info: Contains details about each juice product.
+   The background color uses slight transparency to blend subtly with the page.
+*/
+.juice-info {
+    padding: 1rem; /* Adds internal spacing */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounds the edges for a softer look */
+}
+
+/* 
+   Juice Card Heading: Controls the title of each juice product.
+   It has a dark color for readability and margin for spacing.
+*/
+.juice-info h2 {
+    color: #333; /* Dark gray for strong contrast */
+    margin-bottom: 0.5rem; /* Creates space below the heading */
+}
+
+/* 
+   Juice Card Description: Styles the text inside each juice card.
+   Uses a slightly lighter gray to differentiate from headings.
+*/
+.juice-info p {
+    color: #444; /* Medium-dark gray for readability */
+}
+
+/* 
+   Modal (Popup): A hidden container that overlays the screen when triggered.
+   Uses `display: none;` initially and is shown dynamically via JavaScript.
+*/
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Stays fixed even when scrolling */
+    top: 0; /* Aligns to the top of the viewport */
+    left: 0; /* Aligns to the left of the viewport */
+    width: 100%; /* Covers the full width of the screen */
+    height: 100%; /* Covers the full height of the screen */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    justify-content: center; /* Centers modal content horizontally */
+    align-items: center; /* Centers modal content vertically */
+    z-index: 200; /* Ensures it appears above other elements */
+}
+
+/* 
+   Modal Content: The visible part of the modal, containing an image and description.
+   The padding and max-width make it properly sized for various screen sizes.
+*/
+.modal-content {
+    display: flex; /* Uses flexbox for layout */
+    background-color: white; /* Sets a white background */
+    padding: 20px; /* Adds spacing inside */
+    border-radius: 10px; /* Rounds the corners */
+    max-width: 800px; /* Limits the width */
+    width: 90%; /* Ensures it resizes on smaller screens */
+    margin: 20px; /* Adds spacing around */
+}
+
+/* 
+   Modal Image Section: Holds the image inside the modal.
+   The `flex: 1;` ensures it takes up half of the available space.
+*/
+.modal-image {
+    flex: 1; /* Takes up half the modal width */
+    padding-right: 20px; /* Adds spacing between image and text */
+    display: flex; /* Uses flexbox for centering */
+    align-items: center; /* Vertically centers the image */
+}
+
+/* 
+   Modal Image Styling: Ensures the image is well-contained inside its section.
+   `object-fit: contain;` prevents cropping.
+*/
+.modal-image img {
+    width: 100%; /* Makes image responsive */
+    max-height: 400px; /* Prevents image from becoming too large */
+    object-fit: contain; /* Ensures the full image is visible */
+    border-radius: 10px; /* Rounds the corners slightly */
+}
+
+/* 
+   Modal Description Section: Contains the heading and text for the modal.
+   Uses `flex-direction: column;` to stack content vertically.
+*/
+.modal-description {
+    flex: 1; /* Takes up the other half of the modal */
+    display: flex; /* Uses flexbox */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: flex-start; /* Aligns content at the top */
+    margin-top: 20px; /* Adds spacing at the top */
+}
+
+/* 
+   Modal Heading: Highlights the title of the selected juice item.
+   Uses a bright color to match the theme.
+*/
+.modal-description h2 {
+    margin-bottom: 1.5rem; /* Creates spacing below the title */
+    font-size: 2rem; /* Increases text size */
+    color: #ff6b6b; /* Uses theme color */
+}
+
+/* 
+   Modal Text: Styles the detailed description inside the modal.
+   `line-height: 1.6;` improves readability.
+*/
+.modal-description p {
+    color: #333; /* Dark gray text */
+    font-size: 1.1rem; /* Slightly larger than default text */
+    line-height: 1.6; /* Increases spacing between lines for readability */
+}
+
+/* 
+   Close Button: A simple button to close the modal.
+   Uses `cursor: pointer;` to indicate it's clickable.
+*/
+.btn-close {
+    background: transparent; /* No background color */
+    border: none; /* Removes default border */
+    font-size: 1.5rem; /* Increases button size */
+    color: #333; /* Dark gray color */
+    cursor: pointer; /* Shows pointer cursor */
+}
+
+/* 
+   Close Button Hover Effect: Changes color when hovered to indicate interactivity.
+*/
+.btn-close:hover {
+    color: #d9534f; /* Changes to a slightly brighter red */
+}
+
+/* 
+   Footer Section: A fixed-width footer at the bottom of the page.
+   Uses a background color that matches the theme.
+*/
+footer {
+    text-align: center; /* Centers text */
+    padding: 20px; /* Adds padding inside */
+    background-color: #f7b7a3; /* Light peach color */
+    margin-top: 50px; /* Adds space between the page content and footer */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds slight shadow for depth */
+    position: relative; /* Ensures it stays at the bottom */
+    bottom: 0; /* Aligns it to the bottom */
+    width: 100%; /* Makes it span the full width */
+}
+
+/* 
+   Footer Text: Styles the paragraph inside the footer.
+   The font size is slightly smaller than body text.
+*/
+footer p {
+    color: #333; /* Dark text for contrast */
+    font-size: 1rem; /* Sets a moderate font size */
+}
+
+/* 
+   Social Media Icons: A flex container to arrange social media links.
+   The `gap: 20px;` ensures spacing between icons.
+*/
+.social-icons {
+    display: flex; /* Uses flexbox for alignment */
+    justify-content: center; /* Centers icons horizontally */
+    gap: 20px; /* Adds spacing between icons */
+    margin-top: 30px; /* Adds spacing above */
+}
+
+/* 
+   Individual Social Media Icon: Styles each icon inside the footer.
+   The rounded shape and hover effects make them interactive.
+*/
+.social-icon {
+    font-size: 1.5rem; /* Sets icon size */
+    color: white; /* White text color */
+    background-color: #ff6b6b; /* Uses theme color */
+    padding: 12px; /* Increases clickable area */
+    border-radius: 50%; /* Makes it circular */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    display: flex; /* Ensures proper alignment */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    width: 30px; /* Sets a fixed width */
+    height: 30px; /* Sets a fixed height */
+    text-decoration: none; /* Removes underline */
+}
+
+/* 
+   Social Media Icon Hover: When hovered, the background changes slightly 
+   and the icon scales up for a more engaging effect.
+*/
+.social-icon:hover {
+    background-color: #ff4a4a; /* Slightly brighter red */
+    transform: scale(1.1); /* Enlarges slightly */
+}
+
+.modal[aria-hidden="true"] {
+    display: none; /* Hides modal when not in use */
+}
+
+.modal[aria-hidden="false"] {
+    display: flex; /* Makes the modal visible */
+}
+/* OWN CODE ENDS HERE*/

@@ -1,0 +1,81 @@
+/* OWN CODE STARTS HERE*/
+.contact-container {
+    margin-top: 80px; /* Pushes the section down to avoid overlapping with navbar */
+    text-align: center; /* Centers all text content */
+    padding: 50px 20px; /* Adds space around the section for better readability */
+}
+
+/* Contact Section Heading */
+.contact-container h1 {
+    font-size: 2.5rem; /* Makes the heading large and prominent */
+    margin-bottom: 10px; /* Adds spacing below the heading */
+    color: #ff6b6b; /* Matches the button color for consistency */
+    font-family: 'Arial', sans-serif; /* Ensures a clean and readable font */
+}
+
+/* Contact Section Description */
+.contact-container p {
+    font-size: 1.2rem; /* Increases readability of the paragraph */
+    margin-bottom: 30px; /* Adds space between the text and form */
+}
+
+/* Contact Form - Centers the form and sets max width */
+.contact-form {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers form elements */
+    max-width: 600px; /* Restricts form width for better layout */
+    margin: 0 auto; /* Centers the form horizontally */
+    gap: 20px; /* Adds space between form elements */
+    padding: 20px; /* Adds space inside the form container */
+}
+
+/* Form Group - Ensures proper spacing and alignment of labels and inputs */
+.form-group {
+    width: 100%; /* Ensures all elements stretch to full width of form */
+    display: flex; /* Uses flexbox for structure */
+    flex-direction: column; /* Stacks label and input vertically */
+    text-align: left; /* Aligns text to the left for better readability */
+}
+
+/* Labels for form fields */
+.form-group label {
+    font-size: 1rem; /* Sets a readable font size */
+    margin-bottom: 5px; /* Adds space between label and input field */
+    color: #333; /* Dark color for contrast and readability */
+}
+
+/* Input fields and textareas styling */
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem; /* Makes the fields easier to click and type in */
+    font-size: 1rem; /* Ensures text inside inputs is easily readable */
+    border: 1px solid #ccc; /* Adds a light border for structure */
+    border-radius: 5px; /* Softens the corners of input fields */
+    width: 100%; /* Makes sure inputs take full width of form */
+}
+
+/* Textarea specific styles */
+.form-group textarea {
+    resize: vertical; /* Allows user to expand textarea vertically */
+    height: 120px; /* Sets an initial height for better usability */
+}
+
+/* Submit Button - Styles the form submission button */
+.submit-btn {
+    padding: 1rem 2rem; /* Increases button size for easier interaction */
+    background-color: #ff6b6b; /* Matches theme color */
+    color: #333; /* Dark text for readability */
+    font-size: 1.2rem; /* Ensures button text is large and readable */
+    border: none; /* Removes default button border */
+    border-radius: 30px; /* Rounds the button for a modern look */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    width: 100%; /* Makes button stretch to full form width */
+}
+
+/* Hover effect for the submit button */
+.submit-btn:hover {
+    background-color: #ff4a4a; /* Darkens the button slightly on hover */
+}
+/* OWN CODE ENDS HERE*/
